@@ -15,9 +15,9 @@ attr_accessor :name, :songs
     @songs << song
   end
   
-  def add_song_by_name(songname)
-    songname = Song.new(songname)
-    songname.artist = self
+  def add_song_by_name(name)
+    name = Song.new(songname)
+    name.artist = self
   end
   
   def self.song_count
