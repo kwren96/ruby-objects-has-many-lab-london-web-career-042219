@@ -21,7 +21,7 @@ attr_accessor :name, :songs
   end
   
   def self.song_count
-    @@total_songs.flatten.length
+    @@total_songs.length
   end
   
 end
