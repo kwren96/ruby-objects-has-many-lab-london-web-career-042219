@@ -4,8 +4,8 @@ attr_accessor :name, :songs
 
 @@total_songs = []
 
-  def initialize
-    @name
+  def initialize(name)
+    @name = name
     @songs = []
     @@total_songs << self
   end
