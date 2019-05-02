@@ -7,7 +7,7 @@ attr_accessor :name, :songs
   def initialize(name)
     @name = name
     @songs = []
-    @@total_songs << self
+    @@all_artists << self
   end
   
   def add_song(song)
@@ -21,11 +21,11 @@ attr_accessor :name, :songs
   end
   
   def self.all_artists
-    
+    @@all_artists
   end
   
   def self.song_count
-    
+    all_artists.inject {|sum, artist| sum += 
   end
   
 end
