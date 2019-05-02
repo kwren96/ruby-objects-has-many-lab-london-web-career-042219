@@ -25,7 +25,7 @@ attr_accessor :name, :songs
   end
   
   def self.song_count
-    all_artists.inject {|sum, artist| sum += 
+    all_artists.inject {|sum, artist| sum + artist.songs.count}
   end
   
 end
